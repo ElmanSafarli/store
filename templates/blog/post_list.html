@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="products">
+        {% for post in post_list %}
+            <div class="products-container">
+                    <div class="product-box">
+                    <img src="{{ post.image.url }}" alt="image">
+                    <a class="product-title" href="{{ post.get_absolute_url }}">{{ post.title }}</a>
+                    <p class="product-price">{{ post.price }}</p>
+                    <div class="product-btn">
+                        <button class="product-more"><i class="fa-solid fa-circle-info"></i>Reed more</button>
+                        <button class="product-add"><i class="fa-solid fa-plus"></i>Add</button>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+        </div>
+{% endblock content %}

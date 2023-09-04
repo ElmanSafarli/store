@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static menu_tags %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Electronics</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="{% static 'styles/main.css' %}">
+</head>
+<body>
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <nav>
+        <div class="nav-top">
+            <div class="nav-logo">
+                <h2>LOGO</h2>
+            </div>
+            <div class="">
+                <i class="fa-solid fa-phone"></i>
+                <span>*9999</span>
+            </div>
+        </div>
+        <div class="nav-middle">
+            <div class="nav-search-box">
+                <form action="">
+                    <input type="text" placeholder="Write the product you are looking for" class="nav-search">
+                    <button class="nav-search-btn" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="nav-bottom">
+            {% include 'blog/include/top_nav.html' %}
+        </div>
+    </nav>
+
+    <header>
+        {% block content %}
+
+        {% endblock content %}
+    </header>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-container">
+                <div class="footer-item">
+                    <h4>Phone / Tablets / Watch</h4>
+                    <ul>
+                        <li><a href="">Phones</a></li>
+                        <li><a href="">Tablets</a></li>
+                        <li><a href="">Smart watch</a></li>
+                    </ul>
+                </div>
+                <div class="footer-item">
+                    <h4>Gadgets and accessories</h4>
+                    <ul>
+                        <li><a href="">Phones</a></li>
+                        <li><a href="">Tablets</a></li>
+                        <li><a href="">Smart watch</a></li>
+                        <li><a href="">Phones</a></li>
+                        <li><a href="">Tablets</a></li>
+                        <li><a href="">Smart watch</a></li>
+                    </ul>
+                </div>
+                <div class="footer-item">
+                    <h4>TV, Audio and Entertainment</h4>
+                    <ul>
+                        <li><a href="">Phones</a></li>
+                        <li><a href="">Tablets</a></li>
+                        <li><a href="">Smart watch</a></li>
+                        <li><a href="">Phones</a></li>
+                        <li><a href="">Tablets</a></li>
+                        <li><a href="">Smart watch</a></li>
+                        <li><a href="">Phones</a></li>
+                        <li><a href="">Tablets</a></li>
+                        <li><a href="">Smart watch</a></li>
+                        <li><a href="">Phones</a></li>
+                        <li><a href="">Tablets</a></li>
+                        <li><a href="">Smart watch</a></li>
+                        <li><a href="">Phones</a></li>
+                        <li><a href="">Tablets</a></li>
+                        <li><a href="">Smart watch</a></li>
+                    </ul>
+                </div>
+                <div class="footer-item">
+                    <h4>Computer technology</h4>
+                    <ul>
+                        <li><a href="">Phones</a></li>
+                        <li><a href="">Tablets</a></li>
+                        <li><a href="">Smart watch</a></li>
+                        <li><a href="">Phones</a></li>
+                        <li><a href="">Tablets</a></li>
+                        <li><a href="">Smart watch</a></li>
+                    </ul>
+                </div>
+                <div class="footer-item">
+                    <h4>Household appliances</h4>
+                    <ul>
+                        <li><a href="">Phones</a></li>
+                        <li><a href="">Tablets</a></li>
+                        <li><a href="">Smart watch</a></li>
+                        <li><a href="">Phones</a></li>
+                        <li><a href="">Tablets</a></li>
+                        <li><a href="">Smart watch</a></li>
+                        <li><a href="">Phones</a></li>
+                        <li><a href="">Tablets</a></li>
+                        <li><a href="">Smart watch</a></li>
+                    </ul>
+                </div>
+                <div class="footer-info">
+                    <div class="footer-logo">
+                        <h1>LOGO</h1> <span> | *9999</span>
+                    </div>
+                    <div class="footer-slogan">
+                        All rights reserved 1998-2023
+                    </div>
+                    <div class="footer-media">
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <i class="fa-brands fa-facebook"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="{% static 'app/app.js' %}"></script>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/d17c83b3d5.js" crossorigin="anonymous"></script>
+</body>
+</html>
