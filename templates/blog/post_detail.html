@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="products">
+        <div style="margin-top: 500px">
+            <img src="{{ post.image.url }}" alt="image">
+            <p class="product-title">{{ post.title }}</p>
+            <p class="product-price">{{ post.price }}</p>
+            <p>{{ post.text }}</p>
+        </div>
+    </div>
+{% endblock content %}

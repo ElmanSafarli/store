@@ -1,0 +1,20 @@
+{% load menu_tags %}
+
+<div class="products-container">
+    {% for post in list_last_posts %}
+    <div class="product-box">
+        <img src="{{ post.image.url }}" alt="image">
+        <div class="product-title" >
+            <a href="{{ post.get_absolute_url }}">{{ post.title }}</a>
+        </div>
+        <p class="product-price">{{ post.price }}</p>            
+        <div class="product-btn">
+            <a class="product-more" href="{{ post.get_absolute_url }}"><i class="fa-solid fa-circle-info"></i>Reed more</a>
+            <!-- <button class="product-more"><i class="fa-solid fa-circle-info"></i>Reed more</button> -->
+            <button class="product-add"><i class="fa-solid fa-plus"></i>Add</button>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+    
